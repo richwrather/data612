@@ -1,6 +1,14 @@
 # data612
 Repository for Data Mining assignments 
 
+In Homework #4, I concatenated two data frames and then removed the rows with missing values:
+1. I loaded the stocks_yahoo dataset from https://raw.githubusercontent.com/frankData612/data_612/master/stock_data/stocks_yahoo.csv using the Pandas read_csv function.
+2. I manually created a new data frame with one row that matched the structure of the stocks_yahoo dataset.
+3. I concatenated the two data frames using the pd.concat() method.  I included ignore_index=True so the new data frame would have a contiguous index.
+4. I counted the number of rows in the data frame.
+5. I then calculated the number of rows with missing data by subtracting the number of rows with missing values from the total number of rows.
+6. Finally I dropped the rows with missing values by calling the dropna() method on the data frame.
+
 In Homework #3, I created three Seaborn plots:
 1. I loaded the stocks_yahoo dataset from https://raw.githubusercontent.com/frankData612/data_612/master/stock_data/stocks_yahoo.csv using the Pandas read_csv function.
 2. I converted the string 'date' variable into a new datetime field.  
