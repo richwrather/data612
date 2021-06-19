@@ -1,5 +1,11 @@
 # data612
 Repository for Data Mining assignments 
+In Homework #5, I converted three of the stocks_yahoo features to different data types:
+1. I loaded the stocks_yahoo dataset from https://raw.githubusercontent.com/frankData612/data_612/master/stock_data/stocks_yahoo.csv using the Pandas read_csv function.
+2. I printed the data types from the original data frame.
+3. I then converted the 'price_at_close' feature from a float to a category data type and printed all of the data types.
+4. After that I converted the 'no' feature from an int to a string and printed all of the data types.
+5. Finally, I converted the 'volume' feature from a string to a float by including the 'coerce' attribute in the Pandas to_numeric() function.
 
 In Homework #4, I concatenated two data frames and then removed the rows with missing values:
 1. I loaded the stocks_yahoo dataset from https://raw.githubusercontent.com/frankData612/data_612/master/stock_data/stocks_yahoo.csv using the Pandas read_csv function.
