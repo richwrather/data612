@@ -1,5 +1,18 @@
 # data612
 Repository for Data Mining assignments 
+In Homework #6, I used a regular expression to match a pattern in the stocks_yahoo dataset and created a new column based on that result.  I also used the apply() function to print out the mean, sum, mode, median, and range of a Series.
+1. I loaded the stocks_yahoo dataset from https://raw.githubusercontent.com/frankData612/data_612/master/stock_data/stocks_yahoo.csv using the Pandas read_csv function.
+2. For this assignment, I focused on the data related to the Apple Inc. stock.  So I created a new data frame named "apple" that only contains the records where the company_name was "AAPL - Apple Inc.".
+3. For the regular expression part of this assignment, I created a regex that would match the percentage value in parenthesis within the Dividend Yield column.
+4. I created a funtion named split_it() that contained the regex and I used the apply() funtion to pass in the Dividend Yield data.
+5. Once within the split_it() function, I used the re.sub() function to match the pattern and replace it with and empty space.  
+6. This data was returned and added to a new column in the dataset named "Dividend_Yield_cleaned".
+7. For the second part of the assignment, I loaded the stocks_yahoo dataset from https://raw.githubusercontent.com/frankData612/data_612/master/stock_data/stocks_yahoo.csv using the Pandas read_csv function again so it could be executed independantly of the first section.  I also sectioned off the Apple Inc. stocks.
+8. I created a new function named getstats() that will be used to print the required statistics.  
+9. I used the Statistics library to handle calculating the mean, mode, and median within the getstats() funtion.  I used the Numpy sum() function to calculate the sum, and I used the built-in min() and max() functions to produce the range.
+10. One thing I encountered was there isn't a mode with this dataset. So I used a try/catch block to catch the error and print out a message in the event there wasn't a mode.  This allowed the code to complete without erroring out with a StatisticsError.
+11. To get the data into the apply() function, I had to convert the apple series into a dataframe.
+
 In Homework #5, I converted three of the stocks_yahoo features to different data types:
 1. I loaded the stocks_yahoo dataset from https://raw.githubusercontent.com/frankData612/data_612/master/stock_data/stocks_yahoo.csv using the Pandas read_csv function.
 2. I printed the data types from the original data frame.
