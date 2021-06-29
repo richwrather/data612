@@ -1,5 +1,6 @@
 # data612
 Repository for Data Mining assignments 
+
 In Homework #6, I used a regular expression to match a pattern in the stocks_yahoo dataset and created a new column based on that result.  I also used the apply() function to print out the mean, sum, mode, median, and range of a Series.
 1. I loaded the stocks_yahoo dataset from https://raw.githubusercontent.com/frankData612/data_612/master/stock_data/stocks_yahoo.csv using the Pandas read_csv function.
 2. For this assignment, I focused on the data related to the Apple Inc. stock.  So I created a new data frame named "apple" that only contains the records where the company_name was "AAPL - Apple Inc.".
