@@ -1,6 +1,29 @@
 # data612
 Repository for Data Mining assignments 
 
+For my Final project, I did the Getting Started with Titanic project on Kaggle.
+Kaggle supplied the training and testing data sets, so there was no need to split one data set into two.
+I examined the data using the ProfileReport function from the pandas_profiling library.
+Based on that analysis, I decided to drop the PassengerID, Name, Ticket, and Cabin from the training data set.
+There was missing data in the Age, Embarked, and Fare variables, so I filled in the missing values instead of dropping the rows.
+Since the models prefer numeric values, I encoded the Sex, and Embarked variables.
+Then I standardized the values by using the StandardScaler() function.
+For the models, I decided to compare several to see how they scored.  I used the following:
+1. Support Vector Machine
+2. KNN
+3. Naive Bayes
+4. Decision Tree
+5. Logistic Regression
+6. XGBClassifier
+7. Random Forest
+8. Perceptron
+9. Linear SVC
+10. Stochastic Gradient Descent
+
+I then submitted my results to Kaggle and even though the Decision Tree scored the highest of the models, it was the SVC model that scored the highest in the Kaggle competition.
+My score was 0.78468, which ranked me 9,778 out of 88,868 submitions.
+
+
 In Homework #7, I used the groupby() function to aggreagate the data by company_name.
 1. I loaded the stocks_yahoo dataset from https://raw.githubusercontent.com/frankData612/data_612/master/stock_data/stocks_yahoo.csv using the Pandas read_csv function.
 2. I created a function named summarize_data() that printed out the average, min, max, number of records, and the mix for each company in the data set.
